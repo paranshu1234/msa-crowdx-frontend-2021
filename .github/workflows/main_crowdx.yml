@@ -11,6 +11,9 @@ on:
 jobs:
   build-and-deploy:
     runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: "./frontend"
 
     steps:
     # checkout the repo
@@ -35,5 +38,5 @@ jobs:
         app-name: crowdx
         slot-name: Production
         publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_B42FBDA3A45F418C9B3C46468B924054 }}
-        package: .
+        package: ./frontend/build
 
