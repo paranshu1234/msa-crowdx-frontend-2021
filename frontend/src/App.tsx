@@ -1,14 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { loadTheme } from '@fluentui/react';
+import { appTheme } from './ThemeDefinitions';
+import AppBar from './Components/AppBar';
+
+loadTheme(appTheme);
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-         <img src={logo} alt="Crowdx" />
-         <p>Comming soon</p>
-      </header>
+      <AppBar />
     </div>
   );
 }

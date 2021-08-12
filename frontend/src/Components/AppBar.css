@@ -1,0 +1,11 @@
+.App-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    height: 15px;
+}
+
+.App-header img {
+    height: 35px;
+}
