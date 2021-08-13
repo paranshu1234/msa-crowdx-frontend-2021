@@ -3,6 +3,10 @@ import { SearchBox } from '@fluentui/react/lib/SearchBox';
 import logo from '../logo.svg';
 import "./AppBar.css"
 import { DefaultButton, PrimaryButton } from '@fluentui/react';
+import {
+    Link
+  } from "react-router-dom";
+  
 
 const AppBar: React.FC = () => {
     return (
@@ -10,8 +14,8 @@ const AppBar: React.FC = () => {
             <img  src={logo} alt="Crowdx" />
             <div className="button-group-wrapper">
                 <SearchBox placeholder="Search a Creator" onSearch={newValue => console.log('value is ' + newValue)} />
-                <DefaultButton text="Login" />
-                <PrimaryButton text="Get Started"/>
+                <Link to="/login"><DefaultButton text="Login" /></Link>
+                <Link to="/signup"><PrimaryButton text="Get Started"/></Link>
             </div>
        </header>
     );
