@@ -8,7 +8,8 @@ import {
   Route
 } from "react-router-dom";
 import Home from './Pages/Home';
-import About from './Pages/About';
+import Signup from './Pages/Signup';
+import Login from './Pages/Login';
 
 loadTheme(appTheme);
 
@@ -19,11 +20,14 @@ function App() {
        <AppBar />
           <Switch>
             <Route path="/login">
-              <Home />
+              <Login />
             </Route>
             <Route path="/signup">
-              <About />
+              <Signup />
             </Route>
+          <Route path="/">
+              <Home />
+          </Route>
           </Switch>
        </Router>
     </div>
