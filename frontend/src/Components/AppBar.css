@@ -9,3 +9,7 @@
 .App-header img {
     height: 35px;
 }
+
+.button-group-wrapper {
+    display: flex;
+}
