@@ -10,7 +10,7 @@ import {
 import Home from './Pages/Home';
 import Signup from './Pages/Signup';
 import Login from './Pages/Login';
-
+import Creator from './Pages/Creator';
 loadTheme(appTheme);
 
 function App() {
@@ -19,6 +19,9 @@ function App() {
        <Router>
        <AppBar />
           <Switch>
+            <Route path="/creator">
+              <Creator />
+            </Route>
             <Route path="/login">
               <Login />
             </Route>
