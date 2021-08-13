@@ -1,5 +1,6 @@
 import React from 'react'
 import SupportCard from '../Components/SupportCard'
+import Team from '../Components/Team'
 
 const Creator: React.FC = () => {
     return (
@@ -10,6 +11,7 @@ const Creator: React.FC = () => {
                 <SupportCard />
                 <SupportCard />
                 <SupportCard />
+                <Team />
             </div>
         </div>
     )
