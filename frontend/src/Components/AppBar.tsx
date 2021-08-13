@@ -4,7 +4,7 @@ import logo from '../logo.svg';
 import "./AppBar.css"
 import { DefaultButton, PrimaryButton } from '@fluentui/react';
 
-function AppBar() {
+const AppBar: React.FC = () => {
     return (
        <header className="App-header">
             <img  src={logo} alt="Crowdx" />
@@ -14,7 +14,7 @@ function AppBar() {
                 <PrimaryButton text="Get Started"/>
             </div>
        </header>
-    )
+    );
 }
 
 export default AppBar
