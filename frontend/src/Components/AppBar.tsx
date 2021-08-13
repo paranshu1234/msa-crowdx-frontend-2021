@@ -11,7 +11,7 @@ import {
 const AppBar: React.FC = () => {
     return (
        <header className="App-header">
-            <img  src={logo} alt="Crowdx" />
+            <Link to="/"><img  src={logo} alt="Crowdx" /></Link>
             <div className="button-group-wrapper">
                 <SearchBox placeholder="Search a Creator" onSearch={newValue => console.log('value is ' + newValue)} />
                 <Link to="/login"><DefaultButton text="Login" /></Link>
