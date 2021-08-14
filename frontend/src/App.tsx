@@ -11,11 +11,14 @@ import Home from './Pages/Home';
 import Signup from './Pages/Signup';
 import Login from './Pages/Login';
 import Creator from './Pages/Creator';
+import { ApolloProvider } from '@apollo/client';
+import client from './Apollo/apollo-client';
 loadTheme(appTheme);
 
 function App() {
   return (
     <div className="App">
+      <ApolloProvider client={client}>
        <Router>
        <AppBar />
           <Switch>
@@ -33,6 +36,7 @@ function App() {
           </Route>
           </Switch>
        </Router>
+       </ApolloProvider>
     </div>
   );
 }
