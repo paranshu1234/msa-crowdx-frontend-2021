@@ -2,7 +2,6 @@ import React from "react";
 import "./TeamCard.css";
 import { DefaultEffects } from "@fluentui/react";
 import {
-  IPersonaProps,
   IPersonaSharedProps,
   Persona,
   PersonaSize,
