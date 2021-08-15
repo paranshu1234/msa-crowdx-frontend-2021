@@ -11,21 +11,25 @@ import {
 
 
 const examplePersona: IPersonaSharedProps = {
-  imageInitials: "TR",
-  text: "Ted Randall",
-  secondaryText: "Project Manager",
-  optionalText: "Available at 4:00pm",
+  secondaryText: "Team Member",
 };
+
+const personaWithInitials: IPersonaSharedProps = {
+    ...examplePersona,
+    text: "Paranshu Makwana",
+    imageInitials: "PM",
+  };
+  
+
 
 const TeamCard: React.FC = () => {
   return (
     <div className="team-card" style={{ boxShadow: DefaultEffects.elevation4 }}>
-      <Persona {...examplePersona} 
-      size={PersonaSize.size100}
+      <Persona {...personaWithInitials} 
+      size={PersonaSize.size72}
       presence={PersonaPresence.online}
       imageAlt="Team Member"
       />
-      <p>Member</p>
     </div>
   );
 };
