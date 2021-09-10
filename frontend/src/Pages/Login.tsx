@@ -5,6 +5,7 @@ import "./Login.css"
 import { DefaultButton, PrimaryButton } from '@fluentui/react/lib/components/Button';
 import { Separator } from '@fluentui/react/lib/Separator';
 import { DefaultEffects } from '@fluentui/react';
+import "./Login.css";
 
 const Login: React.FC = () => {
     return (
@@ -12,13 +13,14 @@ const Login: React.FC = () => {
              <h1 className="login-header">Login</h1>
             <div className="login-wrapper"  style={{ boxShadow: DefaultEffects.elevation4 }}>
                
-                <TextField label="Email" placeholder="Enter your email" />
+                <TextField label="Email" placeholder="Enter your email" className="fields" />
                 <TextField
                 label="Password"
                 type="password"
                 canRevealPassword
                 revealPasswordAriaLabel="Show password"
                 placeholder="Enter your password"
+                className="fields"
                 />
                 <div className="link-wrapper">
                     <Link className="forgot-password" to="/"><p>Forgot Password?</p></Link> 
@@ -44,7 +46,7 @@ const Login: React.FC = () => {
 
             <div className="login-footer-wrapper">  
                  <span>New to CrowdX?</span> 
-                <Link className="signup-link" to="/"><p>Sign up</p></Link> 
+                <Link className="signup-link" to="/signup"><p>Sign up</p></Link> 
              </div>
 
             </div>
