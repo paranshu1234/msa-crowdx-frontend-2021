@@ -4,8 +4,12 @@ import { Link } from 'react-router-dom';
 import "./Login.css"
 import { DefaultButton, PrimaryButton } from '@fluentui/react/lib/components/Button';
 import { Separator } from '@fluentui/react/lib/Separator';
-import { DefaultEffects } from '@fluentui/react';
+import { DefaultEffects, IIconProps } from '@fluentui/react';
 import "./Login.css";
+
+const githubIcon: IIconProps = { iconName: "github"}
+const googleIcon: IIconProps = {iconName: "google"}
+const facebookIcon: IIconProps = {iconName: "facebook"}
 
 const Login: React.FC = () => {
     return (
@@ -35,9 +39,9 @@ const Login: React.FC = () => {
             </div>
            
            <div className="Oauth-wrapper">
-                <Link to="/"><DefaultButton className="button-custom" text="Continue with github"/></Link>
-                <Link to="/"><DefaultButton className="button-custom" text="Continue with google"/></Link>
-                <Link to="/"><DefaultButton className="button-custom" text="Continue with facebook"/></Link>
+                <Link to="/"><DefaultButton className="button-custom" iconProps={githubIcon} text="Continue with github"/></Link>
+                <Link to="/"><DefaultButton className="button-custom" iconProps={googleIcon} text="Continue with google"/></Link>
+                <Link to="/"><DefaultButton className="button-custom" iconProps={facebookIcon} text="Continue with facebook"/></Link>
            </div>
 
            <div className="seperator-wrapper">

@@ -4,8 +4,13 @@ import { Link } from 'react-router-dom';
 import "./Login.css"
 import { DefaultButton, PrimaryButton } from '@fluentui/react/lib/components/Button';
 import { Separator } from '@fluentui/react/lib/Separator';
-import { DefaultEffects } from '@fluentui/react';
+import { DefaultEffects, IIconProps } from '@fluentui/react';
 import "./Signup.css";
+
+const githubIcon: IIconProps = { iconName: "github"}
+const googleIcon: IIconProps = {iconName: "google"}
+const facebookIcon: IIconProps = {iconName: "facebook"}
+
 
 
 const Signup: React.FC = () => {
@@ -15,9 +20,9 @@ const Signup: React.FC = () => {
             <div className="login-wrapper"  style={{ boxShadow: DefaultEffects.elevation4 }}>
 
             <div className="Oauth-wrapper">
-                <Link to="/"><DefaultButton className="button-custom" text="Sign up with github"/></Link>
-                <Link to="/"><DefaultButton className="button-custom" text="Sign up with google"/></Link>
-                <Link to="/"><DefaultButton className="button-custom" text="Sign up with facebook"/></Link>
+                <Link to="/"><DefaultButton className="button-custom" iconProps={githubIcon} text="Sign up with github"/></Link>
+                <Link to="/"><DefaultButton className="button-custom" iconProps={googleIcon} text="Sign up with google"/></Link>
+                <Link to="/"><DefaultButton className="button-custom" iconProps={facebookIcon} text="Sign up with facebook"/></Link>
            </div>
 
            <div className="seperator-wrapper">
