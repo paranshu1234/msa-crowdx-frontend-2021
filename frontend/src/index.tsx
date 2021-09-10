@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { initializeIcons } from '@fluentui/react/lib/Icons';
 
-initializeIcons();
+initializeIcons(undefined, { disableWarnings: true });
 
 ReactDOM.render(
   <React.StrictMode>
