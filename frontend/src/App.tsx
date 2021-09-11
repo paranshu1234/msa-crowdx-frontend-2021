@@ -22,10 +22,12 @@ library.add(fab);
 
 registerIcons({
   icons: {
-    apple: <FontAwesomeIcon icon={['fab', 'apple']} />,
+    twitter: <FontAwesomeIcon icon={['fab', 'twitter']} />,
     google: <FontAwesomeIcon icon={['fab', 'google']} />,
     github: <FontAwesomeIcon icon={['fab', 'github']} />,
-    facebook: <FontAwesomeIcon icon={['fab', 'facebook']} />
+    facebook: <FontAwesomeIcon icon={['fab', 'facebook']} />,
+    instagram: <FontAwesomeIcon icon={['fab', 'instagram']} />,
+    youtube: <FontAwesomeIcon icon={['fab', 'youtube']} />
   }
 });
 

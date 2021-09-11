@@ -1,0 +1,47 @@
+.home-page-wrapper {
+    display: grid;
+    place-items: center;
+}
+
+footer {
+    background-color: #3F3F3D;
+    color: white;
+    height: 50vh;
+    width: 100%;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    bottom: 0;
+    position: absolute;
+}
+
+.footer-logo-wrapper {
+    justify-content: center;
+    text-align: center;
+    padding: 0 25px;
+}
+
+.footer-logo-wrapper small {
+    margin-right: 25px;
+}
+
+.para-wrapper {
+    margin: 20px auto;
+    width: 50%;
+    padding: 30px 0;
+}
+
+.footer-link-wrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.category p {
+    margin: 10px 0;
+}
+
+.social-links {
+    color: white;
+    margin-top: 45px;
+}
