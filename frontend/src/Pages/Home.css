@@ -1,0 +1,155 @@
+.home-page-wrapper {
+    display: grid;
+    place-items: center;
+}
+
+footer {
+    background-color: #3F3F3D;
+    color: white;
+    height: 50vh;
+    width: 100%;
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.footer-logo-wrapper {
+    justify-content: center;
+    text-align: center;
+    padding: 0 25px;
+}
+
+.footer-logo-wrapper small {
+    margin-right: 25px;
+}
+
+.para-wrapper {
+    margin: 20px auto;
+    width: 50%;
+    padding: 30px 0;
+}
+
+.footer-link-wrapper {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.category p {
+    margin: 10px 0;
+}
+
+.social-links {
+    color: white;
+    margin-top: 45px;
+}
+
+.hero {
+    background-color: #3F3F3D;
+    color: white;
+    width: 100%;
+    height: 65vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("https://live-patreon-marketing.pantheonsite.io/wp-content/uploads/2020/12/coe-optimize.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+    position: absolute;
+}
+
+.hero-text-wrapper {
+    width: 35%;
+    z-index: 1;
+}
+
+.hero-btn {
+    width: 210px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    margin: 8px 0;
+}
+
+.hero p {
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+
+.search-creators  {
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.search-creators h1 {
+    margin: 60px 0;
+    font-size: 46px;
+}
+
+.find-creator-btn {
+    font-size: 20px;
+    width: 800px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+.crowdx-introduction {
+    height: 60vh;
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px;
+    text-align: center;
+
+}
+
+.crowdx-introduction h1 {
+    margin-top: 60px;
+    margin-bottom: 0;
+    font-size: 46px;
+}
+
+.crowdx-introduction p {
+    margin: 20px 0 60px 0;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.cta-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60vh;
+}
+
+.cta-bottom h1 {
+    margin: 50px 0;
+    font-size: 46px;
+}
+
+.cta-btn {
+    width: 160px;
+    height: 50px;
+    border-radius: 15px;
+}
