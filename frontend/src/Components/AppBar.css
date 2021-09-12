@@ -13,3 +13,23 @@
 .button-group-wrapper {
     display: flex;
 }
+
+.left-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navlink-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navlink-wrapper p {
+    margin: 0 15px;
+}
+
+.button-group-wrapper .item {
+    margin: 0 5px;
+}
