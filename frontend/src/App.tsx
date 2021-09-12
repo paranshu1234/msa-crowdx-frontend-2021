@@ -17,6 +17,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { registerIcons } from '@fluentui/react/lib/Styling';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import NotFound from './Pages/NotFound';
 
 library.add(fab);
 
@@ -39,19 +40,22 @@ function App() {
     <div className="App">
       <ApolloProvider client={client}>
        <Router>
-       <AppBar />
+          <AppBar /> 
           <Switch>
-            <Route path="/creator">
+            <Route path="/creator" exact>
               <Creator />
             </Route>
-            <Route path="/login">
+            <Route path="/login" exact >
               <Login />
             </Route>
-            <Route path="/signup">
+            <Route path="/signup" exact>
               <Signup />
             </Route>
-          <Route path="/">
+          <Route path="/" exact>
               <Home />
+          </Route>
+          <Route>
+              <NotFound />
           </Route>
           </Switch>
        </Router>

@@ -1,6 +1,7 @@
 .Login-page-wrapper {
     display: flex;
     align-items: center;
+    padding: 80px;
     flex-direction: column;
 }
 
