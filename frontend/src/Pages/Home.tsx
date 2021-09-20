@@ -158,7 +158,7 @@ const Home: React.FC = () => {
                 <h1>Are you ready to take back control?</h1>
                 <Link to="/signup" ><PrimaryButton text="Get started" className="cta-btn"/></Link>
             </section>
-            <footer>
+            <footer className="footer-wrapper">
                 <div className="footer-logo-wrapper">
                     <h1>Crowdx</h1>
                     <span><small>&copy; Crowdx</small></span>

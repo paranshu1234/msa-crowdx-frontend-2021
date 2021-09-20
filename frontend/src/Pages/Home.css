@@ -3,15 +3,15 @@
     place-items: center;
 }
 
-footer {
+.footer-wrapper {
     background-color: #3F3F3D;
     color: white;
-    height: 50vh;
+    min-height: 50vh;
     width: 100%;
     text-align: left;
     display: grid;
     grid-template-columns: 1fr 2fr;
-
+    padding: 80px 0  0 0;
 }
 
 .footer-logo-wrapper {
