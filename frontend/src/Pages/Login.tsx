@@ -31,7 +31,8 @@ const Login: React.FC = () => {
                </div>
                 
             <div className="button-wrapper">
-                 <PrimaryButton className="button-custom" text="Login"/>
+                 <Link className="login-btn-link" to="/dashboard"><PrimaryButton className="button-custom" text="Login"/></Link>
+                 
             </div>
             
             <div className="seperator-wrapper">
