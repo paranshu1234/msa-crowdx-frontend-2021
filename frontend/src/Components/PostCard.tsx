@@ -1,6 +1,6 @@
 import React from "react";
 import { DefaultEffects } from "@fluentui/react";
-import { DefaultButton, PrimaryButton } from "@fluentui/react/lib/Button";
+import { DefaultButton } from "@fluentui/react/lib/Button";
 import { Separator } from "@fluentui/react/lib/Separator";
 import { Icon } from "@fluentui/react/lib/Icon";
 import "./PostCard.css";
