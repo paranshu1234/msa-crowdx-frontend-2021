@@ -5,6 +5,10 @@
     flex-direction: column;
 }
 
+.login-btn-link {
+    width: 100%;
+}
+
 .Login-page-wrapper h1 {
     text-align: center;
 }

@@ -18,6 +18,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 import { registerIcons } from '@fluentui/react/lib/Styling';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import NotFound from './Pages/NotFound';
+import Dashboard from './Pages/Dashboard';
 
 library.add(fab);
 
@@ -50,6 +51,9 @@ function App() {
             </Route>
             <Route path="/signup" exact>
               <Signup />
+            </Route>
+            <Route path="/dashboard">
+              <Dashboard />
             </Route>
           <Route path="/" exact>
               <Home />
