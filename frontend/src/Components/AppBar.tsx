@@ -5,6 +5,7 @@ import "./AppBar.css";
 import { DefaultButton, PrimaryButton } from "@fluentui/react";
 import { Icon } from "@fluentui/react/lib/Icon";
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 import {
   IPersonaSharedProps,
@@ -14,6 +15,7 @@ import {
 } from "@fluentui/react/lib/Persona";
 
 import { useLocation } from "react-router-dom";
+import MbNavLinks from "./MbNavLinks";
 
 const navPersona: IPersonaSharedProps = {
   imageUrl:
@@ -23,6 +25,8 @@ const navPersona: IPersonaSharedProps = {
 
 const AppBar: React.FC = (props) => {
   const location = useLocation();
+
+  const [open, setOpen] = useState<boolean>(false);
 
   return (
     <header className="App-header">
@@ -58,9 +62,26 @@ const AppBar: React.FC = (props) => {
               className="item-auth"
             />
           </div>
-          <div className="ham-burger-menu-icn-wrapper">
-            <Icon iconName="GlobalNavButton" className="ham-burger-menu-icn" />
-          </div>
+          {open ? (
+            <div
+              className="ham-burger-menu-icn-wrapper"
+              onClick={() => setOpen(!open)}
+            >
+              <Icon iconName="Cancel" className="ham-burger-menu-icn" />
+            </div>
+          ) : (
+            <div
+              className="ham-burger-menu-icn-wrapper"
+              onClick={() => setOpen(!open)}
+            >
+              <Icon
+                iconName="GlobalNavButton"
+                className="ham-burger-menu-icn"
+              />
+            </div>
+          )}
+
+          {open && <MbNavLinks />}
         </div>
       ) : location.pathname === `/login` ||
         location.pathname === `/signup` ? null : (
@@ -76,9 +97,26 @@ const AppBar: React.FC = (props) => {
           <Link to="/signup" className="item">
             <PrimaryButton text="Get Started" className="head-signup-link" />
           </Link>
-          <div className="ham-burger-menu-icn-wrapper">
-            <Icon iconName="GlobalNavButton" className="ham-burger-menu-icn" />
-          </div>
+          {open ? (
+            <div
+              className="ham-burger-menu-icn-wrapper"
+              onClick={() => setOpen(!open)}
+            >
+              <Icon iconName="Cancel" className="ham-burger-menu-icn" />
+            </div>
+          ) : (
+            <div
+              className="ham-burger-menu-icn-wrapper"
+              onClick={() => setOpen(!open)}
+            >
+              <Icon
+                iconName="GlobalNavButton"
+                className="ham-burger-menu-icn"
+              />
+            </div>
+          )}
+
+          {open && <MbNavLinks />}
         </div>
       )}
     </header>
