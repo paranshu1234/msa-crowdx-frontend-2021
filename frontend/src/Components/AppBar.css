@@ -1,57 +1,131 @@
 .App-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 30px 10px;
-    height: 15px;
-    position: fixed;
-    background: white;
-    width: 100%;
-    z-index: 2;
-    border-bottom: 1px solid rgb(168, 168, 168);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 10px;
+  height: 15px;
+  position: fixed;
+  background: white;
+  width: 100%;
+  z-index: 2;
+  border-bottom: 1px solid rgb(168, 168, 168);
 }
 
 .App-header .logo-image {
-    height: 30px;
+  height: 30px;
 }
 
 .button-group-wrapper {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
+}
+
+.dashboard-btn-grp-wrapper {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  justify-content: flex-end;
+}
+
+.ham-burger-menu-icn-wrapper {
+  display: none;
 }
 
 .button-group-icn {
-    font-size: 24px;
-    color: rgba(68, 68, 68, 0.801);
+  font-size: 24px;
+  color: rgba(68, 68, 68, 0.801);
 }
 
 .item-auth {
-   cursor: pointer;
-   margin: 0 10px; 
+  cursor: pointer;
+  margin: 0 10px;
 }
 
 .left-content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navlink-wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navlink-wrapper p {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 .button-group-wrapper .item {
-    margin: 0 5px;
+  margin: 0 5px;
 }
 
 .nav-item:hover {
-    cursor: pointer;
-    color: rgb(39, 39, 39);
-    border-bottom: 1px solid black;
+  cursor: pointer;
+  color: rgb(39, 39, 39);
+  border-bottom: 1px solid black;
+}
+
+/* Responsive css */
+
+@media only screen and (max-width: 600px) {
+  .App-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px;
+    height: auto;
+    position: fixed;
+    background: white;
+    max-width: 100%;
+    z-index: 2;
+    border-bottom: 1px solid rgb(168, 168, 168);
+  }
+
+  .item-auth {
+    display: none;
+  }
+
+  .head-login-search {
+    display: none;
+  }
+
+  .button-group-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+  }
+
+  .head-login-link {
+    width: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .head-signup-link {
+    width: 110px;
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .navlink-wrapper {
+    display: none;
+  }
+
+  .App-header .logo-image {
+    height: 35px;
+  }
+
+  .ham-burger-menu-icn-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 4px 2px;
+  }
+
+  .ham-burger-menu-icn-wrapper .ham-burger-menu-icn {
+    display: block;
+    font-size: 25px;
+  }
 }
