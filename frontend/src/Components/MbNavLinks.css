@@ -1,0 +1,21 @@
+.mobile-nav-links-wrapper {
+  height: 100vh;
+  max-width: 100%;
+  background: white;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  overflow-y: scroll;
+}
+
+.mobile-nav-links-wrapper li {
+  list-style: none;
+}
+
+.mobile-nav-links-wrapper p {
+  font-size: 20px;
+  margin: 10px 0;
+}
